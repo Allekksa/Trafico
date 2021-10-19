@@ -253,7 +253,7 @@ padding-top: 50px;
   font-weight: 700;
   letter-spacing: 1.1px;
   text-transform: uppercase;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .descr{
@@ -303,9 +303,6 @@ width: 60%;
   max-width: 40%;
 }
 
-.apply__img {
-  
-}
 .faq__container {
   justify-content: space-between;
   padding-top: 100px;
@@ -325,7 +322,7 @@ width: 60%;
   z-index: -1;
   right: 0;
   top: 0;
-  border-top-left-radius: 90px;
+  border-top-left-radius: 15%;
 
 }
 
@@ -435,7 +432,7 @@ box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   font-weight: 500;
 }
 .reviews__title {
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .grid-item {
@@ -443,16 +440,46 @@ box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   grid-column-end: 3;
 }
 
+.reviews__container {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
 .reviews__subtitle {
-  width: 30%;
+  width: 80%;
+}
+
+
+.footer__container {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer__socials {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  padding: 50px 15px 90px;
+  margin: 0 auto;
 }
 
 .footer-bg {
+  position: relative;
+}
+.footer-bg::before {
+  content: "";
   background-image: url('./img/footer-bg.png');
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
-  /* max-width: 1400px; */
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
   }
 
 .footer__container {
@@ -493,7 +520,7 @@ box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   justify-content: space-between;
   position: absolute;
   top: 60px;
-  right: 140px;
+  right: 120px;
 }
 
 .form-container {
@@ -525,44 +552,109 @@ input::-webkit-input-placeholder {
    color: var(--text-color); 
   }
 
-  .footer__bottom {
-    align-items: center;
-    justify-content: space-between;
+.footer__bottom {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1150px;
+}
+
+  
+
+.footer-link {
+  font-weight: 400;
+}
+.footer-nav__list {
+  justify-content: flex-end;
+}
+.footer-nav__item:not(:first-child) {
+margin-left: 100px;
+}
+
+.social__link {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.socal__item:not(:last-child) {
+  margin-right: 30px;
   }
 
-  .footer__socials {
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1150px;
-    padding-top: 50px;
-    padding-bottom: 90px;
-  }
+.fb {
+  background-image: url('./img/fb.svg');
+}
 
-  .footer-link {
-    font-weight: 400;
-  }
+.tw {
+  background-image: url('./img/tw.svg');
+}
 
-  .social__link {
-    width: 36px;
-    height: 36px;
-    display: inline-block;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.inst {
+  background-image: url('./img/inst.svg');
+}
 
-  .socal__item:not(:last-child) {
-    margin-right: 30px;
-    }
 
-  .fb {
-    background-image: url('./img/fb.svg');
-  }
+.reviews__left {
+  width: 40%;
+}
+.reviews__right {
+  width: 60%;
+}
 
-  .tw {
-    background-image: url('./img/tw.svg');
-  }
+.swiper {
+  width: 900px;
+  height: 360px;
+  margin-right: -120px;
+ 
+}
+.preview {
+  background-image: url('./img/preview.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 13px;
+  display: inline-block;
+}
+.next {
+  background-image: url('./img/next.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 13px;
+  display: inline-block;
+}
 
-  .inst {
-    background-image: url('./img/inst.svg');
-  }
+.swiper-slide {
+  padding: 60px 50px 40px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  
+  font-size: 16px;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.review__title {
+  background-image: url('./img/avatar-1.jpg');
+  position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  padding-left: 80px;
+}

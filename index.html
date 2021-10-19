@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trafico</title>
 	<link rel="stylesheet" href="./normalize.css">
+	<link  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -192,19 +195,50 @@
 		</div>
 	</section>
 	<section class="reviews">
-		<div class="reviews__container container">
-			<h2 class="reviews__title title">
+		<div class="reviews__container container  flex">
+			<div class="reviews__left">
+					<h2 class="reviews__title title">
 				About us
 			</h2>
 			<p class="reviews__subtitle subtitle">
 				Out Awesome Clients
 			</p>
+			<div class="navigation flex">
+				<span class="preview"></span>
+				<span class="next"></span>
+			</div>
+			</div>
+			<div class="reviews__right">
+								<!-- Slider main container -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<p class="review__slide-descr">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
+<h3 class="review__title">
+	Isak Pettersson
+</h3>
+						</div>
+						<div class="swiper-slide">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan. </div>
+						<div class="swiper-slide">Slide 3</div>
+						...
+					</div>
+					
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+				
+				</div>
+			</div>
+		
 		</div>
 	</section>
 </main>
 <footer class="footer">
 	<div class="footer-bg">
-		<div class="footer__container container">
+		<div class="footer__container ">
 			<p class="footer__banner">
 				We&nbsp;provide traffic management consultants so&nbsp;you get started quickly, contact&nbsp;us for a&nbsp;quote today!
 			</p>
@@ -223,17 +257,17 @@
 				</a>
 				<div class="footer__right flex">
 					<nav class="nav footer__nav">
-						<ul class="nav__list list-reset flex">
-							<li class="nav__item"><a href="#" class="nav__link footer-link">About</a></li>
-							<li class="nav__item"><a href="#" class="nav__link footer-link">How to</a></li>
-							<li class="nav__item"><a href="#" class="nav__link footer-link">Faqs</a></li>
+						<ul class="footer-nav__list list-reset flex">
+							<li class="footer-nav__item"><a href="#" class="footernav__link footer-link">About</a></li>
+							<li class="footer-nav__item"><a href="#" class="footer-nav__link footer-link">How to</a></li>
+							<li class="footer-nav__item"><a href="#" class="footer-nav__link footer-link">Faqs</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer__socials container flex">
+	<div class="footer__socials flex">
 		<small class="footer__copyright">
 			Copyright @ 2019
 		</small>
@@ -244,6 +278,7 @@
 		</ul>
 	</div>
 </footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="./main.js"></script>
 </body>
 </html>
