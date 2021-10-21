@@ -1,9 +1,9 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
  
-  loop: true,
+  loop: false,
  
-  slidesPerView: 2,
+  slidesPerView: 2.3,
   spaceBetween: 20,
 
   navigation: {
@@ -11,3 +11,5 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.preview',
   }
 });
+
+
