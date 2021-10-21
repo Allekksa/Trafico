@@ -1,209 +1,38 @@
-:root {
-  --color-white: #ffffff;
-  --bg-color: #fef8f5;
-  --text-color: #402b2b;
-  --accent-color: #ee4d47;
+@import "_normalize.css";
+@import "_fonts.css";
+@import "_variables.css";
+@import "_vendor.css";
+@import "_global.css";
+@import "_overall.css";
 
-}
+/* components imports */
+@import "./components/_header.css";
+@import "./components/_first.css";
+@import "./components/_become.css";
+@import "./components/_featured.css";
+@import "./components/_slider.css";
+@import "./components/_newsletter.css";
+@import "./components/_insp.css";
+@import "./components/_footer.css";
 
-@font-face {
-	font-family: 'Rubik';
-	src: url('./fonts/rubik-v14-latin-700.woff2') format('woff2'),
-		url('./fonts/rubik-v14-latin-700.woff') format('woff');
-	font-display: swap;
-	font-weight: 700;
-	font-style: normal;
-}
 
-@font-face {
-	font-family: 'Rubik';
-	src: url('./fonts/rubik-v14-latin-500.woff2') format('woff2'),
-		url('./fonts/rubik-v14-latin-500.woff') format('woff');
-	font-display: swap;
-	font-weight: 500;
-	font-style: normal;
-}
+@import "_media.css";
 
-@font-face {
-	font-family: 'Rubik';
-	src: url('./fonts/rubik-v14-latin-regular.woff2') format('woff2'),
-		url('./fonts/rubik-v14-latin-regular.woff') format('woff');
-	font-display: swap;
-	font-weight: 400;
-	font-style: normal;
-}
 
-@font-face {
-	font-family: 'Rubik';
-	src: url('./fonts/rubik-v14-latin-300.woff2') format('woff2'),
-		url('./fonts/rubik-v14-latin-300.woff') format('woff');
-	font-display: swap;
-	font-weight: 300;
-	font-style: normal;
-}
 
-@font-face {
-	font-family: 'DM Serif Display';
-	src: url('./fonts/dm-serif-display-v5-latin-regular.woff2') format('woff2'),
-		url('./fonts/dm-serif-display-v5-latin-regular.woff') format('woff');
-	font-display: swap;
-	font-weight: 400;
-	font-style: normal;
-}
 
-/* START default css settings */
-html {
-  box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  color: var(--text-color);
-  font-size: 18px;
-  font-weight: 300;
-  background-color: var(--bg-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
-}
-
-p {
-	margin: 0;
-	padding: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-white);  /*можно color: inherit*/
-  opacity: 1;
-  transition: opacity 0.3s;
-  cursor: pointer;
-}
-
-a:visited {
-  color: var(--color-white);
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-.site-container {
-  overflow: hidden; 
-}
-
-.is-hidden {
-  display: none !important; 
-}
-
-.btn-reset {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1150px;
-}
-
-.flex {
-  display: flex;
-}
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
 
 /* END default css settings */
-.header {
-  position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-}
-
-.header__container {
-justify-content: space-between;
-align-items: center;
-padding-top: 50px;
-}
-
-.logo__img {
-  background-position: center;
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
-}
-
-.header__logo {
-  font-size: 32px;
-  text-transform: uppercase;
-}
-
-.btn {
-  font-weight: 700;
-	font-size: 16px;
-	letter-spacing: 1.05px;
-	text-transform: uppercase;
-	border-radius: 5px;
-	background-color: var(--accent-color);
-	padding: 20px 24px;
-}
-
-.header__btn {
-  color: var(--color-white);
-}
-
-.logo {
-  font-family: 'DM Serif Display', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.header__right {
-  align-items:center;
-}
-
-.nav__item {
-  margin-right: 100px;
-}
-
-.nav__link {
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1.05px;
-}
-
-.header-link {
-  font-weight: 700;
-}
 
 
 
 .hero-bg{
-  background-image: url('./img/hero-bg.png');
+  background-image: url('/img/hero-bg.png');
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -230,7 +59,7 @@ padding-top: 50px;
 
 .hero__link {
   padding: 20px 78px 20px 24px;
-  background-image: url('./img/Union.png');
+  background-image: url('/img/Union.png');
   background-position: 150px center;
   background-size: 30px 13px;
   background-repeat: no-repeat;
@@ -247,20 +76,12 @@ padding-top: 50px;
   padding-top: 70px;
 }
 
-.title {
-  color: var(--accent-color);
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
+.about__title {
   margin-bottom: 60px;
 }
 
-.descr{
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 2.2;
-}
+
+
 
 .about__descr {
   margin-bottom: 70px;
@@ -297,7 +118,9 @@ padding-top: 50px;
 width: 60%;
 }
 
-
+.apply__title {
+  margin-bottom: 60px;
+}
 
 .applay__right {
   max-width: 40%;
@@ -343,12 +166,7 @@ width: 60%;
   margin-bottom: 45px;
 }
 
-.subtitle {
-  font-family: 'DM Serif Display', sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.4;
-}
+
 
 .accor {
   display: flex;
@@ -495,7 +313,7 @@ margin-bottom: 50px;
 
 .footer-bg::before {
   content: "";
-  background-image: url('./img/footer-bg.png');
+  background-image: url('/img/footer-bg.png');
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -526,7 +344,7 @@ margin-bottom: 50px;
 .footer__btn {
   color: var(--color-white);
   padding: 20px 78px 20px 24px;
-  background-image: url('./img/Union.png');
+  background-image: url('/img/Union.png');
   background-position: 150px center;
   background-size: 30px 13px;
   background-repeat: no-repeat;
@@ -581,7 +399,11 @@ input::-webkit-input-placeholder {
   max-width: 1150px;
 }
 
-  
+.logo__img {
+  background-position: center;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+}
 
 .footer-link {
   font-weight: 400;
@@ -607,15 +429,15 @@ margin-left: 100px;
   }
 
 .fb {
-  background-image: url('./img/fb.svg');
+  background-image: url('/img/fb.svg');
 }
 
 .tw {
-  background-image: url('./img/tw.svg');
+  background-image: url('/img/tw.svg');
 }
 
 .inst {
-  background-image: url('./img/inst.svg');
+  background-image: url('/img/inst.svg');
 }
 
 
@@ -637,7 +459,7 @@ margin-left: 100px;
   
 }
 .preview {
-  background-image: url('./img/next.png');
+  background-image: url('/img/next.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -648,7 +470,7 @@ margin-left: 100px;
   transform: rotate(180deg);
 }
 .next {
-  background-image: url('./img/next.png');
+  background-image: url('/img/next.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -697,8 +519,8 @@ margin-left: 100px;
   padding-left: 50px;
 }
 .person1 {
-  background-image: url('./img/avatar-1.jpg');
+  background-image: url('/img/avatar-1.jpg');
 }
 .person2 {
-  background-image: url('./img/avatar-2.jpg');
+  background-image: url('/img/avatar-2.jpg');
 }

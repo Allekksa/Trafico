@@ -5,22 +5,40 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trafico</title>
-	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="css/_normalize.css">
 	<link  rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="site-container">
+		<!-- Бургер меню
+		<div class="menu">
+			<button class="menu__close btn-reset" aria-label="close menu">
+				<span class="menu__close-line"></span>
+				<span class="menu__close-line"></span>
+			</button>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">Become A Travel</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Featured Stories</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Featured Videos</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Newsletter</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Inspirations</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>-->
 		<header class="header">
-			<div class="container header__container flex">
-				<div class="header__left">
-					<a class="logo header__logo">
-					<img class="header__img" src="./img/logo.svg" alt="" >
+			<div class="header__container container flex">
+					<a class="header__logo" aria-label="Логотип Trafico">
+					<svg width="47" height="50" viewBox="0 0 47 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.4" d="M-1.90735e-06 17L16 17L16 1.90735e-06L-1.90735e-06 17Z" fill="white"/>
+						<path d="M47 17H16V50L47 17Z" fill="white"/>
+					</svg>
 					Trafico.
 					</a>
-				</div>
 				<div class="header__right flex">
 					<nav class="nav header__nav">
 						<ul class="nav__list list-reset flex">
@@ -49,10 +67,10 @@
 			<section class="about">
 				<div class="about__container container flex">
 					<div class="about__left">
-						<h2 class="about__title title">
+						<h2 class="about__title section-title">
 							About us
 						</h2>
-						<p class="about__descr descr">
+						<p class="about__descr section-descr">
 							The occupational traffic permit is&nbsp;one of&nbsp;the most important things in&nbsp;the company when carrying out freight transport. In&nbsp;fact, it&nbsp;is&nbsp;a&nbsp;prerequisite for doing business traffic at&nbsp;all.
 						</p>
 						<p class="about__banner">
@@ -60,20 +78,20 @@
 						</p>
 					</div>
 					<div class="about__right">
-						<img class="about__img" src="./img/courier.svg" alt="">
+						<img class="about__img" src="img/courier.svg" alt="">
 					</div>
 				</div>
 			</section>
 			<section class="applay">
 				<div class="applay__container container flex">
 					<div class="applay__left">
-						<img class="apply__img" src="./img/operator.svg" alt="" >
+						<img class="apply__img" src="img/operator.svg" alt="" >
 					</div>
 					<div class="applay__right">
-						<h2 class="apply__title title">
+						<h2 class="apply__title section-title">
 							How to apply
 						</h2>
-						<p class="apply__descr descr">
+						<p class="apply__descr section-descr">
 							When applying for a&nbsp;traffic permit, there are certain requirements that you must meet that are included in&nbsp;the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to&nbsp;remember is&nbsp;to&nbsp;confirm your application for a&nbsp;traffic permit by&nbsp;the company&rsquo;s company signer or&nbsp;CEO.
 						</p>
 					</div>
@@ -83,15 +101,15 @@
 				<div class="faq-bg">
 					<div class="faq__container container flex">
 						<div class="faq__left">
-							<h2 class="faq__title title">
+							<h2 class="faq__title section-title">
 								Faq
 							</h2>
-							<p class="faq__subtitle subtitle">
+							<p class="faq__subtitle section-subtitle">
 								Questions and Answers on&nbsp;Professional Traffic Permits:
 							</p>
 						</div>
 						<div class="faq__right">
-							<img src="./img/Questions.svg" alt="">
+							<img src="img/Questions.svg" alt="">
 						</div>
 					</div>
 					<div class="container">
@@ -222,10 +240,10 @@
 			<section class="reviews">
 				<div class="reviews__container container  flex">
 					<div class="reviews__left">
-							<h2 class="reviews__title title">
+							<h2 class="reviews__title section-title">
 						About us
 					</h2>
-					<p class="reviews__subtitle subtitle">
+					<p class="reviews__subtitle section-subtitle">
 						Out Awesome Clients
 					</p>
 					
