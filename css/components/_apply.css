@@ -5,14 +5,15 @@
 }
 
 .apply__img {
-  max-width: 40%;
+  max-width: 534px;
+  height: auto;
 }
 
-.apply__right {
-  max-width: 40%;
+.apply__content {
+  max-width: 450px;
 }
 
-.apply__title {
+.apply-title {
   margin-bottom: 60px;
 }
 

@@ -31,7 +31,7 @@
 			</nav>
 		</div>-->
 		<header class="header">
-			<div class="container header__container flex">
+			<div class="container header-container flex">
 					<a class="header__logo" aria-label="Логотип Trafico">
 					<svg width="47" height="50" viewBox="0 0 47 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path opacity="0.4" d="M-1.90735e-06 17L16 17L16 1.90735e-06L-1.90735e-06 17Z" fill="white"/>
@@ -56,39 +56,40 @@
 		<main class="main">
 			<section class="hero">
 				<div class="hero-bg">
-					<div class="container hero__container ">
-						<h1 class="hero__title">
-							Your awesome traffic permit consultant.
-						</h1>
-						<a href="" class="hero__link btn">Get started</a>
+					<div class="container hero-container ">
+						<div class="hero__content">
+							<h1 class="hero-title">
+								Your awesome traffic permit consultant.
+							</h1>
+							<a href="" class="hero__link btn">Get started</a>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="about">
 				<div class="container about__container flex">
-					<div class="about__left">
-						<h2 class="section-title about__title">
+					<div class="about-content">
+						<h2 class="section__title about-title">
 							About us
 						</h2>
-						<p class="section-descr about__descr">
+						<p class="section__descr about-descr">
 							The occupational traffic permit is&nbsp;one of&nbsp;the most important things in&nbsp;the company when carrying out freight transport. In&nbsp;fact, it&nbsp;is&nbsp;a&nbsp;prerequisite for doing business traffic at&nbsp;all.
 						</p>
 						<p class="about__banner">
 							How do&nbsp;you do&nbsp;when you need to&nbsp;obtain a&nbsp;commercial traffic permit for freight transport to&nbsp;your business?
 						</p>
 					</div>
-					<div class="about__right">
-					</div>
+					<img src="/img/courier.png" alt="Картинка курьера" class="about-img">
 				</div>
 			</section>
 			<section class="apply">
 				<div class="apply__container container flex">
 					<img class="apply__img" src="img/operator-or@0,3x.png" alt="" >
-					<div class="apply__right">
-						<h2 class="apply__title section-title">
+					<div class="apply__content">
+						<h2 class="apply-title section__title">
 							How to apply
 						</h2>
-						<p class="apply__descr section-descr">
+						<p class="apply-descr section__descr">
 							When applying for a&nbsp;traffic permit, there are certain requirements that you must meet that are included in&nbsp;the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to&nbsp;remember is&nbsp;to&nbsp;confirm your application for a&nbsp;traffic permit by&nbsp;the company&rsquo;s company signer or&nbsp;CEO.
 						</p>
 					</div>
@@ -97,12 +98,17 @@
 			<section class="faq">
 				<div class="faq-bg">
 					<div class="faq__container container">
-						<h2 class="faq__title section-title">
-							Faq
-						</h2>
-						<p class="faq__subtitle section-subtitle">
-							Questions and Answers on&nbsp;Professional Traffic Permits:
-						</p>
+						<div class="faq-content flex">
+							<div class="faq-text">
+								<h2 class="faq-title section__title">
+								Faq
+								</h2>
+								<p class="faq-subtitle section__subtitle">
+									Questions and Answers on&nbsp;Professional Traffic Permits:
+								</p>
+							</div>
+							<img src="./img/Questions.svg" alt="Man picture" class="faq__img">
+						</div>
 						<div class="faq__accordion flex">
 							<div class="accordion_column accordion-left flex">
 								<details class="accordion" open>
@@ -229,11 +235,11 @@
 			</section>
 			<section class="reviews">
 				<div class="reviews__container container flex">
-					<div class="reviews__left">
-						<h2 class="reviews__title section-title">
+					<div class="reviews__content">
+						<h2 class="reviews-title section__title">
 						About us
 						</h2>
-						<p class="reviews__subtitle section-subtitle">
+						<p class="reviews-subtitle section__subtitle">
 						Out Awesome Clients
 						</p>
 					</div>
@@ -249,57 +255,66 @@
 								<!-- Slides -->
 								<div class="swiper-slide ">
 									<p class="reviews__slide-descr">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
-									<h3 class="reviews__slide-title person1">
-										Isak Pettersson
-									</h3>
+									<div class="reviews__person flex">
+										<img src="/img/avatar-1.jpg" alt="Isak Pettersson avatar" class="person-ava">
+										<h3 class="person-title">
+											Isak Pettersson
+										</h3>
+									</div>
 								</div>
 								<div class="swiper-slide">
 										<p class="reviews__slide-descr">From most barricade or traffic control companies located in the phone book. They employ certified Traffic Control Supervisors (TCS) who can generate and certify the traffic control plan. </p>
-									<h3 class="reviews__slide-title person2">
+										<div class="reviews__person flex">
+											<img src="/img/avatar-2.jpg" alt="Simon Sandberg avatar" class="person-ava">
+											<h3 class="person-title">
 										Simon Sandberg
-									</h3>
+											</h3>
+										</div>
 								</div>
 								<div class="swiper-slide">
 									<p class="review__slide-descr">  Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
-									<h3 class="reviews__slide-title person1">
-										Isak Pettersson
-									</h3>
+									<div class="reviews__person flex">
+										<img src="/img/avatar-1.jpg" alt="Isak Pettersson avatar" class="person-ava">
+										<h3 class="person-title">
+											Isak Pettersson
+										</h3>
+									</div>
 								</div>
 								<div class="swiper-slide ">
 									<p class="reviews__slide-descr">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</p>
-									<h3 class="reviews__slide-title person1">
-										Isak Pettersson
-									</h3>
+									<div class="reviews__person flex">
+										<img src="/img/avatar-1.jpg" alt="Isak Pettersson avatar" class="person-ava">
+										<h3 class="reviews__slide-title person1">
+											Isak Pettersson
+										</h3>
+									</div>
 								</div>
-								
 							</div>
-							
-						
-						
 						</div>
 					</div>
-				
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer-bg">
-				<div class="footer__container">
-					<p class="footer__banner">
+				<div class="footer__container flex">
+					<div class="footer-content flex">
+						<p class="footer__banner">
 						We&nbsp;provide traffic management consultants so&nbsp;you get started quickly, contact&nbsp;us for a&nbsp;quote today!
-					</p>
-					<form action="mail.php" class="footer__form form-container" method="POST">
-						<input type="hidden" name="admin_email[]" value="karakymba@mail.ru">
-							<label class="form__label flex" for="name">
-								<span class="form__label">Name</span>
-								<input class="form__input" id="name"  type="text" placeholder="Your Name">
-							</label>
-							<label class="form__label flex" for="email">
-								<span class="form__label">Email address</span>
-								<input class="form__input" id="email"  type="email" placeholder="Your email address"> 
-							</label>
-							<button class="btn footer__btn" type="submit">Get started</button>
-					</form>
+						</p>
+						<form action="mail.php" class="footer__form form-container" method="POST">
+							<input type="hidden" name="admin_email[]" value="karakymba@mail.ru">
+								<label class="form__label flex" for="name">
+									<span class="form__label">Name</span>
+									<input class="form__input" id="name"  type="text" placeholder="Your Name">
+								</label>
+								<label class="form__label flex" for="email">
+									<span class="form__label">Email address</span>
+									<input class="form__input" id="email"  type="email" placeholder="Your email address"> 
+								</label>
+								<button class="btn footer__btn" type="submit">Get started</button>
+						</form>
+					</div>
 					<div class="footer__bottom flex">
 						<a class="logo footer__logo">
 							<img class="footer__logo-img" src="./img/logo-footer.svg" alt="Trafico logo" >

@@ -3,7 +3,7 @@
 }
 
 .container {
-	max-width: 1180px;
+	max-width: 1170px;
 	padding: 0 30px;
 	margin: 0 auto;
 }
@@ -36,7 +36,7 @@
   position: relative;
 }
 
-.section-title {
+.section__title {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.6px;
@@ -45,13 +45,13 @@
   color: var(--accent-color);
 }
 
-.section-descr {
+.section__descr {
   font-size: 18px;
   font-weight: 300;
   line-height: 2.2;
 }
 
-.section-subtitle {
+.section__subtitle {
   font-family: 'DM Serif Display', sans-serif;
   font-size: 48px; 
   font-weight: 400;

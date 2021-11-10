@@ -4,16 +4,16 @@
   padding-bottom: 140px; 
 }
 
-.about__left {
-  width: 52%;
-  padding-top: 70px;
+.about-content {
+  max-width: 580px;
+  margin-top: 80px;
 }
 
-.about__title {
+.about-title {
   margin-bottom: 60px;
 }
 
-.about__descr {
+.about-descr {
   margin-bottom: 70px;
   max-width: 75%;
 }
@@ -29,10 +29,7 @@
   padding: 30px 55px;
 }
 
-.about__right {
-  width: 43%;
-  background-image: url('/img/courier.png');
-  background-position: top center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+ .about-img {
+  margin-bottom: 80px;
+  height: auto;
+} 
